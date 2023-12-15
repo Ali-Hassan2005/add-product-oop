@@ -1,0 +1,29 @@
+﻿<Window x:Class="form_addProduct.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:form_addProduct"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Product Name:"/>
+            <TextBox x:Name="productNameTextBox"/>
+
+            <TextBlock Text="Product netPrice:"/>
+            <TextBox x:Name="productnetPriceTextBox"/>
+
+            <TextBlock Text="Product sellPrice:"/>
+            <TextBox x:Name="productsellPriceTextBox"/>
+
+            <TextBlock Text="Product stock:"/>
+            <TextBox x:Name="productstockTextBox"/>
+
+            <TextBlock Text="Product category:"/>
+            <TextBox x:Name="productcategoryTextBox"/>
+
+            <Button Content="Add Product" Click="AddProduct_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
